@@ -1,6 +1,7 @@
 <!-- Header -->
   <header>
     <!-- Header desktop -->
+    
     <div class="wrap-menu-header gradient1 trans-0-4">
       <div class="container h-full">
         <div class="wrap_header trans-0-3">
@@ -29,11 +30,11 @@
                 </li> -->
 
                 <li>
-                  <a href="gallery.html">Restaurants</a>
+                  <a href="#restaurant">Restaurants</a>
                 </li>
 
                 <li>
-                  <a href="about.html">About</a>
+                  <a href="<?php echo URLROOT;?>/pages/about">About</a>
                 </li>
 
                 <li>
@@ -45,7 +46,7 @@
                 </li>
 
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>

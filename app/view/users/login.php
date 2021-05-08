@@ -18,9 +18,10 @@
 			Sign In
 		</h2>
 		<div class="col-md-6 mx-auto">
-		<div class="card card-body bg-light mt-5 regopacity">
+		<div class="card card-body bg-light mt-5 regopacity">			
 			<div class="signup" style="text-align: center;">
-			<?php flash('register_ok');?>
+			<div class="formSentMsg"><?php flash('inactive');?></div>
+			<div class="formSentMsg"><?php flash('register_ok');?></div>
 				<h2>Login</h2>
 				<p>login to your <?php echo SITENAME?> account</p><hr>
 			</div>
@@ -45,4 +46,8 @@
 		</div>
 	</div>
 	</section>
+	<script type="text/javascript">
+		
+		$(".formSentMsg").delay(2500).fadeOut(300);
+	</script>
 <?php require APPROOT .'/view/include/footer'. '.php';?>

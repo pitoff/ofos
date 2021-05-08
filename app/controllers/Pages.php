@@ -1,16 +1,22 @@
 <?php
+// namespace app\controllers;
+
+// use app\libraries\Controller;
+
 	class Pages extends Controller{
 		public function __construct(){
-			
+			$this->userModel = $this->model('User');
 		}
 
 		public function index(){
 			if (isLoggedIn()) {
-				redirect('posts');
+				redirect('users/dashboard');
 			}
+			$rest_img = $this->userModel->getrestimg();
 			$data = [
 				'title' => 'Welcome to homepage',
-				'description' => 'this is our sharepost practice homepage'
+				'description' => 'this is our sharepost practice homepage',
+				'restimg' => $rest_img
 			];
 
 

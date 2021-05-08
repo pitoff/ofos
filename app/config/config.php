@@ -9,7 +9,7 @@
 	define('APPROOT', dirname(dirname(__FILE__)));
 
 	//url root
-	define('URLROOT', 'http://ofos.com');
+	define('URLROOT', 'http://ofos.test');
 
 	//site name
 	define('SITENAME', 'ofos');

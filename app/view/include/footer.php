@@ -1,4 +1,4 @@
-		<div class="end-footer bg2">
+		<div class="end-footer bg2" id="contact">
 			<div class="container">
 				<div class="flex-sb-m flex-w p-t-22 p-b-22">
 					<div class="p-t-5 p-b-5">
@@ -8,7 +8,7 @@
 					</div>
 
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-						Copyright &copy; 2018 All rights reserved  |  This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						Copyright &copy; my 2021 project All rights reserved | contact: agbasiifeanyi@gmail.com
 					</div>
 				</div>
 			</div>
@@ -68,5 +68,6 @@
 	<script type="text/javascript" src="<?php echo URLROOT;?>/ofoshome/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
 	<script src="<?php echo URLROOT;?>/ofoshome/js/main.js"></script>
+	<script src="<?php echo URLROOT;?>/ofoshome/js/lga.js"></script>
 </body>
 </html>

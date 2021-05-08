@@ -70,4 +70,12 @@
 			return $this->stmt->rowCount();
 		}
 
+		public function columnCount(){
+			return $this->stmt->columnCount();
+		}
+
+		public function fetchColumn(){
+			return $this->stmt->fetchColumn();
+		}
+
 	}

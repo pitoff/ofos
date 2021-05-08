@@ -21,7 +21,7 @@
 <?php require APPROOT .'/view/include/header.php';?>
 	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(../ofoshome/images/bg-title-page-03.jpg);">
 		<h2 class="tit6 t-center">
-			Get started as Regular User
+			Get started as Restaurant owner
 		</h2>
 	</section>
 	<div class="col-md-6 mx-auto" id="background;">
@@ -30,7 +30,7 @@
 				<h2>Sign up</h2>
 				<p><span class="fa fa-pencil"></span> register as restaurant owner</p><hr>
 			</div>
-			<form action = "<?php echo URLROOT;?>/users/restaurantsignup" method="POST">
+			<form action = "<?php echo URLROOT;?>/users/restaurantsignup" method="POST" enctype = "multipart/form-data">
 				<div class="form-group">
 					<label for="sname">Owner surname: <sup>*</sup></label>
 					<input type="text" name="sn" class="form-control form-control-lg <?php echo (!empty($data['sn_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['sn'];?>"><span class="invalid-feedback"><?php echo $data['sn_err'];?></span>
@@ -47,6 +47,16 @@
 					<label for="restaurantname">Restaurant Name: <sup>*</sup></label>
 					<input type="text" name="rest_name" class="form-control form-control-lg <?php echo (!empty($data['rest_name_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['rest_name'];?>"><span class="invalid-feedback"><?php echo $data['rest_name_err'];?></span>
 				</div>
+				 <div class="form-group">
+                    <label for="restaurantimg">Restaurant Photo: <sup>*</sup></label>
+                    <input type="file" id="" required name="rest_img" class="form-control form-control-lg <?php echo (!empty($data['rest_img_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['rest_img'];?>"><span class="invalid-feedback"><?php echo $data['rest_img_err'];?></span>
+                </div>
+                <div class="form-group">
+                    <label for="restaurantdesc">Restaurant Description: <sup>*</sup></label>
+                    <textarea name="rest_desc" class="form-control form-control-lg">
+                    	
+                    </textarea>
+                </div>
 				<div class="form-group">
 					<label for="restaurantlandmark">Restaurant landmark: <sup>*</sup></label>
 					<input type="text" name="rest_lm" class="form-control form-control-lg <?php echo (!empty($data['rest_lm_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['rest_lm'];?>"><span class="invalid-feedback"><?php echo $data['rest_lm_err'];?></span>
